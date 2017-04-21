@@ -67,7 +67,7 @@ var anotherwaypoint = new Waypoint({
   element: document.getElementById('color2'),
   handler: function(direction) {
     $('meta[name=theme-color]').remove();
-    $('head').append( '<meta name="theme-color" content="#DB649C">' );
+    $('head').append( '<meta name="theme-color" content="#362143">' );
   },
-  offset: '75%'
+  offset: '100%'
 })
