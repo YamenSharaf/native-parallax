@@ -62,3 +62,12 @@ var testWaypoint = new Waypoint({
   },
   offset: 'bottom-in-view'
 })
+
+var anotherwaypoint = new Waypoint({
+  element: document.getElementById('color2'),
+  handler: function(direction) {
+    $('meta[name=theme-color]').remove();
+    $('head').append( '<meta name="theme-color" content="#DB649C">' );
+  },
+  offset: '75%'
+})
