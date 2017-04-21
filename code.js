@@ -53,3 +53,12 @@ $('meta[name=theme-color]').remove();
 $('head').append( '<meta name="theme-color" content="#00BCD4">' );
 }
 });
+
+var testWaypoint = new Waypoint({
+  element: document.getElementById('color1'),
+  handler: function(direction) {
+    $('meta[name=theme-color]').remove();
+    $('head').append( '<meta name="theme-color" content="#362143">' );
+  },
+  offset: 'bottom-in-view'
+})
